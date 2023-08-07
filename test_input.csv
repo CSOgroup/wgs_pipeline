@@ -1,3 +1,3 @@
 patient,sex,status,sample,lane,fastq_1,fastq_2
-Akkari23_2N_wgs_1,XX,1,Akkari23_2N_wgs_1,lane_1,/mnt/svraw1/Konstantina/HCC23_BNL_WGS_May_2023/EN00002332_hdd1/HCC_23_1.fastq.gz,/mnt/svraw1/Konstantina/HCC23_BNL_WGS_May_2023/EN00002332_hdd1/HCC_23_2.fastq.gz
-BNL_2N_wgs_1,XX,1,BNL_2N_wgs_1,lane_1,/mnt/svraw1/Konstantina/HCC23_BNL_WGS_May_2023/EN00002332_hdd1/BNL_WT_P6_1.fastq.gz,/mnt/svraw1/Konstantina/HCC23_BNL_WGS_May_2023/EN00002332_hdd1/BNL_WT_P6_2.fastq.gz
+Akkari23_2N_wgs_1,XX,1,Akkari23_2N_wgs_1,lane_1,data/sample_wgs_raw_data/HCC_23_1_SubSampled_Seed200_NReads1000000.fastq.gz,data/sample_wgs_raw_data/HCC_23_2_SubSampled_Seed200_NReads1000000.fastq.gz
+BNL_2N_wgs_1,XX,1,BNL_2N_wgs_1,lane_1,data/sample_wgs_raw_data/BNL_WT_P6_1_SubSampled_Seed200_NReads1000000.fastq.gz,data/sample_wgs_raw_data/BNL_WT_P6_2_SubSampled_Seed200_NReads1000000.fastq.gz

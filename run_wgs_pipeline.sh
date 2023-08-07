@@ -4,7 +4,7 @@ PIPELINE_VERSION="3.2.3"
 MAX_MEMORY="100.GB"
 MAX_CPUS=15
 IGENOMES_BASE="${REFERENCES_PATH}/iGenomes"
-TOOLS="freebayes,mutect2,manta,controlfreec,vep"
+TOOLS="freebayes,manta,controlfreec,vep"
 
 die()
 {
@@ -125,7 +125,6 @@ run(){
                 -r ${PIPELINE_VERSION} \
                 -w ${work_path} \
                 -profile docker \
-                --igenomes_base ${IGENOMES_BASE} \
                 --max_memory ${MAX_MEMORY} \
                 --max_cpus ${MAX_CPUS} \
                 --outdir ${output_path} \
@@ -133,7 +132,9 @@ run(){
                 --genome ${genome} \
 				--tools ${TOOLS} \
                 --save_mapped \
-                --save_output_as_bam
+                --save_output_as_bam \
+				--igenomes_base ${IGENOMES_BASE} \
+				-resume
 }
 
 parse_commandline "$@"
